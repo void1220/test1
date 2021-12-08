@@ -1,0 +1,98 @@
+body{background:black;
+    animation: myfirst 5s;
+    animation-delay: 10s;
+    animation-fill-mode:forwards;
+     }
+
+
+ @keyframes myfirst{
+ 	from{background:#a52a2a;}
+ 	to{background:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimage.32yx.com%2Ffile%2Fuserfiles%2Fimages%2F2017082521404499291.jpg&refer=http%3A%2F%2Fimage.32yx.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1640172569&t=b064b336d7f60f1b6240d89fc55f60db);}
+
+ }
+
+
+ .biaoti {
+ 	 color:white;
+ 	 width: 100%;
+ 	 height:100%;
+ 	 font-size: 20px;
+ 	 margin-top:20px;
+ 	 text-align: center;
+ 	 transition-duration: 5s;
+     animation: title 5s;
+     animation-delay: 5s;
+     animation-fill-mode:forwards;
+     animation-transform:scale(100,100);
+
+     }
+
+
+/*@keyframes title{
+ 	 from{color: white;
+          font-size: 20px;
+ 	      }
+ 	 to{color: yellow;
+ 	    font-size: 40px;}*/
+
+@keyframes title{
+	10%{transform: rotate(0deg);
+	    color: white;
+        font-size:20px;
+        text-align: left;
+        opacity: 100%;}
+	100%{transform: rotate(360deg);
+	    color:#ffd700;
+        font-size: 60px;
+        text-align: left;
+        opacity: 100%;
+	    }
+	
+}
+
+
+.zhuwang{width:50px;
+	 height: 50px;
+ 	 animation:back 5s;
+     animation-fill-mode:forwards;
+     animation:translate(10px,10px);
+
+ 	 }
+
+.A{width: 50px;
+height: 50px;
+display:block;}
+
+
+@keyframes back{
+	0%{opacity: 0%;}
+	20%{ opacity: 100%;
+	    margin-left: 200px;}
+    30%{ opacity: 0%;
+         margin-left:200px;
+	     }
+
+    70%{opacity: 0%;
+    	margin-left: 600px;
+      }
+	80%{ opacity: 100%;
+	    margin-left: 500px;
+	  }
+    90%{ opacity: 0%;
+         margin-left:500px;
+        }
+    100%{opacity: 0%;}
+	
+}
+
+
+/*.{width: 100%;
+   height:100%;
+   background-color:#a52a2a;
+   animation:ground 3s;
+   animation-delay: 20s;}
+
+@keyframes ground{
+	from{background-color:#a52a2a;}
+	to{background:url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fn.sinaimg.cn%2Fsinakd10121%2F73%2Fw556h317%2F20210824%2F12a6-bcc3c2c4e92059061e3d5a914af0ad2c.jpg&refer=http%3A%2F%2Fn.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1640168754&t=ceeefa7004447af4391a2f31200a1827);}
+}
